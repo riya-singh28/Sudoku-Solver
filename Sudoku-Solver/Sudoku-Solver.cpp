@@ -295,6 +295,7 @@ class possibleNos{
  	  *	has finished its lifespan. Calls the destroy() function.
 	*/
 	public:~possibleNos(){
+		destroy();
 	}
 
 	/**	
@@ -428,7 +429,7 @@ class SudokuSolver{
 		cout<<"Validating cells and values...\n\n";
 		
 		solve();
-		cout<<"QED. Your puzzle has been solved!\n\n";
+		cout<<"Wooohoo!!. Your puzzle has been solved!\n\n";
 		displayFrame();
 
 		cout<<"\n\n";
